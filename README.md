@@ -136,6 +136,7 @@ The default rule configuration disables `MD013`/`line-length` because many files
 > **Note**: `MD002`/`first-heading-h1` is disabled by default because it has been deprecated in the `markdownlint` library.
 
 Rules can be enabled, disabled, and customized by creating a [JSON](https://en.wikipedia.org/wiki/JSON) file named `.markdownlint.json` (or `.markdownlintrc`) or a [YAML](https://en.wikipedia.org/wiki/YAML) file named `.markdownlint.yaml` (or `.markdownlint.yml`) in any directory of a project. The rules defined by `.markdownlint{.json,.yaml,.yml,rc}` apply to Markdown files in the same directory and any sub-directories without their own `.markdownlint{.json,.yaml,.yml,rc}`.
+_.mdlrc will [not be supported](https://github.com/DavidAnson/vscode-markdownlint/issues/105)_
 
 > **Note**: `.markdownlint{.json,.yaml,.yml,rc}` is used only if a project has been opened. When no folder is open or a file is not part of the current project, normal user and workspace settings apply (see below). If multiple of these files are present in the same directory, `.markdownlint.json` will be used instead of `.markdownlint.yaml` will be used instead of `.markdownlint.yml` will be used instead of `.markdownlintrc`.
 
